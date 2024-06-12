@@ -1,0 +1,11 @@
+.error {
+    color: red;
+}
+
+.error {
+    color: red;
+    margin: 5px 0;
+}
+.table-bordered td {
+    vertical-align: middle;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 id="title">Validation Form</h1>
+    <p id="description">Designed a form for validation</p>
+    <form id="form">
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Input</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="first-name">First Name:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" id="first-name" class="form-control" placeholder="Enter your First Name" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="last-name">Last Name:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" id="last-name" class="form-control" placeholder="Enter your Last Name" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="example@abc.com" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <textarea id="address" class="form-control" placeholder="Enter your Address" required></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="pincode">Pincode:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" id="pincode" class="form-control" placeholder="Enter your Pincode" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">State:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <input type="text" id="state" class="form-control" placeholder="Enter your State" required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="male" value="Male" class="form-check-input" required>
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="female" value="Female" class="form-check-input">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="food">Food:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <select id="food" class="form-control" required>
+                                    <option value="">Select Food</option>
+                                    <option value="Starters">Starters</option>
+                                    <option value="Desserts">Desserts</option>
+                                    <option value="Milkshakes">Milkshakes</option>
+                                    <option value="Juices">Juices</option>
+                                    <option value="Chat Items">Chat Items</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country:</label></td>
+                        <td>
+                            <div class="form-group">
+                                <select id="country" class="form-control" required>
+                                    <option value="">Select Country</option>
+                                    <option value="India">India</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">UK</option>
+                                    <!-- Add more countries as needed -->
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" id="submit" class="btn btn-primary btn-block">Submit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <div id="formErrors" class="mt-3"></div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS for form validation -->
+<script src="./js/script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+</body>
+</html>
